@@ -4,6 +4,7 @@ from django.utils.html import mark_safe
 
 class PhotoModel(models.Model):
     image = models.ImageField(upload_to='myimages')
+    video = models.FileField(default='no data')
 
     @property
     def image_tag(self):

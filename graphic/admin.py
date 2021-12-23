@@ -8,7 +8,7 @@ from .models import PhotoModel
 
 @admin.register(PhotoModel)
 class PhotoModelAdmin(admin.ModelAdmin):
-    list_display = ['id','image_tag']
+    list_display = ['id','image_tag','video']
 
 
     def image_tag(self,obj):

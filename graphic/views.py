@@ -6,5 +6,6 @@ from .forms import ImageForms
 
 def graphic(request):
     img = PhotoModel.objects.all()
+    # print(img)
     return render(request,'index.html',{'img':img})
 
